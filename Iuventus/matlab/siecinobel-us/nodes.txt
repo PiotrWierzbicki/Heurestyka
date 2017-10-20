@@ -1,0 +1,14 @@
+-122.07, 37.25, Palo-Alto
+-117.08, 32.42, San-Diego
+-105.16, 40.0, Boulder
+-77.02, 38.52, Washington
+-84.23, 33.44, Atlanta
+-88.14, 40.06, Urbana-Champaign
+-83.43, 42.16, Ann-Arbor
+-96.42, 40.47, Lincoln
+-74.39, 40.21, Princeton
+-76.3, 42.26, Ithaca
+-79.58, 40.26, Pittsburgh
+-95.21, 29.45, Houston
+-111.55, 40.39, Salt-Lake-City
+-122.24, 47.33, Seattle

@@ -1,0 +1,17 @@
+9.8, 52.39, Hannover
+8.66, 50.14, Frankfurt
+10.08, 53.55, Hamburg
+7.21, 53.6, Norden
+8.8, 53.08, Bremen
+13.48, 52.52, Berlin
+11.55, 48.15, Muenchen
+9.99, 48.4, Ulm
+11.08, 49.45, Nuernberg
+9.12, 48.73, Stuttgart
+8.41, 49.01, Karlsruhe
+8.49, 49.49, Mannheim
+7.0, 51.44, Essen
+7.48, 51.51, Dortmund
+6.78, 51.22, Duesseldorf
+7.01, 50.92, Koeln
+12.38, 51.34, Leipzig

@@ -1,0 +1,33 @@
+{
+	"components":[
+		{"lambda":3.18e-7, "alpha":2.3, "beta":60,  "sbppLimit":1},	
+		{"lambda":3.18e-7, "alpha":2.3, "beta":60,  "sbppLimit":2},	
+		{"lambda":3.18e-7, "alpha":2.3, "beta":60,  "sbppLimit":3},	
+		{"lambda":3.18e-7, "alpha":2.3, "beta":60,  "sbppLimit":4},
+		{"lambda":3.18e-7, "alpha":2.3, "beta":60,  "sbppLimit":5},
+		{"lambda":3.18e-7, "alpha":2.3, "beta":60,  "sbppLimit":6},
+		{"lambda":3.18e-7, "alpha":2.3, "beta":60,  "sbppLimit":7}
+	],
+	"slas":[
+	{
+		"path":[1,2],
+		"backupPath":[3,4],
+		"linkBackup":[[4,5],[4,5]],
+		"demand":40
+	},
+	{
+		"path":[1,2],
+		"backupPath":[3,4],
+		"linkBackup":[[4,5],[4,5]],
+		"demand":50
+	},
+	{
+		"path":3,
+		"backupPath":[1,2,3,4],
+		"linkBackup":[[4,5],[4,5]],
+		"demand":140
+	}
+
+
+	]
+}

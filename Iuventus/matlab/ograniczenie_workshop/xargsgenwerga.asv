@@ -1,0 +1,13 @@
+clear
+filenames={'slacomp-us.mat.js','slacomp-germany.mat.js'};
+scales=[0.5,1.0,2];
+%netfailsim -i config.json -o out.txt -n N -p policy[1 avail, 2 cont, 3 thre 4 snoball] -u up_time_dist[1 Exp, 2 Weib] -d down_time_dist[1 Exp, 2 Weib, 3 Par, 4LogNorm] -h [thr scale]
+xfid=fopen('params.cfg','w');
+for u=1:2
+    for d=1:4
+        for s=1:length(scales)
+            
+        end
+    end
+end
+fclose(xfid);

@@ -1,0 +1,3 @@
+LIBRARY sbpp.mexw64
+EXPORTS
+   mexFunction   @1
