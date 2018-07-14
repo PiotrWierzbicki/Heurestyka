@@ -1,0 +1,4 @@
+﻿  AntColony.cpp
+c:\users\piotr\desktop\magisterka\algorytmmrówkowy\algorytmmrówkowy\rands.cpp(61): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+c:\users\piotr\desktop\magisterka\algorytmmrówkowy\algorytmmrówkowy\rands.cpp(62): warning C4305: "return": obcięcie z "double" do "float"
+  AlgorytmMrówkowy.vcxproj -> C:\Users\Piotr\Desktop\Magisterka\AlgorytmMrówkowy\Debug\AlgorytmMrówkowy.exe
