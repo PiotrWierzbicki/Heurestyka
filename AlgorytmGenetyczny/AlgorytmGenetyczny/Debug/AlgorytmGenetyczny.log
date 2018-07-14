@@ -1,0 +1,6 @@
+﻿  AlgorytmGenetyczny.cpp
+  Gens.cpp
+c:\users\piotr\desktop\magisterka\algorytmgenetyczny\algorytmgenetyczny\gens.cpp(20): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+c:\users\piotr\desktop\magisterka\algorytmgenetyczny\algorytmgenetyczny\gens.cpp(130): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+  Generowanie kodu...
+  AlgorytmGenetyczny.vcxproj -> C:\Users\Piotr\Desktop\Magisterka\AlgorytmGenetyczny\Debug\AlgorytmGenetyczny.exe
