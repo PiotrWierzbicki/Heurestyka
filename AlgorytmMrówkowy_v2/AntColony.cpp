@@ -214,13 +214,11 @@ void AntColony::antRelease() {
 	}
 
 	//cout << endl << "Aktualizowanie feromonow . . .";
-	newPheromones();
+	//newPheromones();
 	//cout << " zrobione" << endl << endl;
 	//printPheromones();
 
-	for (int i = 0; i < numberOfANTS; i++) {
-		for (int j = 0; j < numberOfNodes; j++) paths[i][j] = -1;
-	}
+
 	prtResults();
 	//prtLength();
 }
@@ -330,6 +328,7 @@ double AntColony::computePathCost(int antNumberK) {
 		if (GRAPH[paths[antNumberK][i]][paths[antNumberK][i + 1]]>0) {
 			sum = sum + (double)GRAPH[paths[antNumberK][i]][paths[antNumberK][i + 1]];
 		}
+
 		else break;
 	}
 	return sum;
@@ -337,14 +336,14 @@ double AntColony::computePathCost(int antNumberK) {
 
 
 //Ustawianie poziomu nowych feromonów po przejœciu danej iteracji - prywatna metoda
-void AntColony::newPheromones() {
+void AntColony::newPheromones(double sum) {
 	for (int i = 0; i < numberOfANTS; i++) {
 		double rlength = computePathCost(i);
 		for (int j = 0; j < nodesForAnt[i] - 1; j++) {
 			int cityi = paths[i][j];
 			int cityj = paths[i][j + 1];
-			modifiedPheromones[cityi][cityj] += Q / rlength;
-			modifiedPheromones[cityj][cityi] += Q / rlength;
+			modifiedPheromones[cityi][cityj] += Q / (rlength + sum/600);
+			modifiedPheromones[cityj][cityi] += Q / (rlength + sum/600);
 		}
 	}
 
@@ -353,6 +352,10 @@ void AntColony::newPheromones() {
 			pheromones[i][j] = (1 - OF) * pheromones[i][j] + modifiedPheromones[i][j];
 			modifiedPheromones[i][j] = 0.0;
 		}
+	}
+
+	for (int i = 0; i < numberOfANTS; i++) {
+		for (int j = 0; j < numberOfNodes; j++) paths[i][j] = -1;
 	}
 }
 
