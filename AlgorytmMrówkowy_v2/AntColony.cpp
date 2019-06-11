@@ -13,6 +13,9 @@
 
 using namespace std;
 
+//static double ***Startpheromones;
+
+
 //Konstruktor przyjmuj¹cy: wskaŸnik do sieci, iloœæ wêz³ów oraz mrówek. 
 //Parametry alfa i beta u¿ywane przy wybieraniu nastêpnego wêz³a na podstawie feromonów
 // Q oraz OF potrzebne do aktualizowania grafu feromonów
@@ -47,7 +50,7 @@ AntColony::~AntColony() {
 
 //inicjalizacja wszystkich potrzebnych danych takich jak macierz feromonów,
 //œcie¿ek dla danej mrówki, tablica najlepszych dróg(koszta), flagi
-void AntColony::initialize(double AllPheromones[4][4], int dim) {
+void AntColony::initialize(int dim) {
 	pheromones = new double*[numberOfNodes];
 	modifiedPheromones = new double*[numberOfNodes];
 	nextCity = new double*[numberOfNodes - 1];
@@ -60,8 +63,8 @@ void AntColony::initialize(double AllPheromones[4][4], int dim) {
 		for (int j = 0; j < 2; j++) nextCity[i][j] = -1.0;
 
 		for (int j = 0; j < numberOfNodes; j++) {
-			pheromones[i][j] = AllPheromones[i][j];
-			modifiedPheromones[i][j] = AllPheromones[i][j];
+			pheromones[i][j] = Startpheromones[dim][i][j];
+			modifiedPheromones[i][j] = Startpheromones[dim][i][j];
 		}
 	}
 

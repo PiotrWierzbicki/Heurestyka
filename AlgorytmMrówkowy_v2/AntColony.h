@@ -5,9 +5,9 @@ private:
 	int numberOfNodes, numberOfANTS;
 	int startCity, stopCity;
 	double smallestValueOfRoute;
-	int *nodesForAnt;
 
-	int **GRAPH, **paths, **fullNet;
+
+	int **fullNet;
 	double **pheromones, **modifiedPheromones, **nextCity;
 	double ALPHA, BETA, Q, OF;
 
@@ -22,7 +22,7 @@ public:
 		double q, double ro, int start, int stop);
 	~AntColony();
 
-	void initialize(double pheromones[4][4], int dim);
+	void initialize(int dim);
 	void setPheromones();
 
 	void drawGRAPH();
@@ -39,6 +39,9 @@ public:
 	int newCity();
 	double computePathCost(int antNumberK);
 
-	int *bestRoute, *PATH;
+	int *bestRoute, *PATH, *nodesForAnt;
 	int* abcd(int *network);
+	int **GRAPH, **paths;
+
+	static double Startpheromones[][][];
 };
